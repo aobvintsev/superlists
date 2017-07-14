@@ -19,5 +19,6 @@ import lists.views
 urlpatterns = [
     url(r'^$', lists.views.home_page, name='home'),
     url(r'^lists/', include('lists.urls')),
+    url(r'^accounts/', include('accounts.urls')),
 #    url(r'^admin/', admin.site.urls),
 ]
